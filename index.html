@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@mdi/font/css/materialdesignicons.css"
+    />
+    <title>Java Page</title>
+  </head>
+  <body>
+    <div id="blackScreen"></div>
+    <div class="left-nav-container">
+      <h1 class="h1-logo"><span class="letter">L</span>ogo</h1>
+      <!-- <a href="" class="home"><span class="mdi mdi-home casita"></span>Home</a> -->
+      <button id="buttonLeftNav">
+        <img src="img/bg/right-chevron (1).png" alt="" id="arrowLeftNav" />
+      </button>
+    </div>
+    <button class="bg-buttons" id="bgOne"></button>
+    <button class="bg-buttons" id="bgTwo"></button>
+    <button class="bg-buttons" id="bgThree"></button>
+
+    <main class="main-container">
+      <div class="users-car">
+        <div class="user-circle-container">
+          <div class="user-info">
+            <div id="fabriLora" class="user-circle"></div>
+            <p>FabriLora</p>
+          </div>
+          <div class="user-info">
+            <div id="pehuGon" class="user-circle"></div>
+            <p>PehuGon</p>
+          </div>
+          <div class="user-info">
+            <div id="pehuGonNinja" class="user-circle"></div>
+            <p>PehuGonNinja</p>
+          </div>
+        </div>
+      </div>
+      <div class="cards-container">
+        <div class="cards">
+          <!-- IMAGEN Y NOMBRE -->
+          <div class="user-card-title">
+            <div class="img-name-card">
+              <div class="img-title-container"></div>
+              <p>FabriLora</p>
+            </div>
+          </div>
+          <!-- IMAGEN CARD -->
+          <div class="img-card-container">
+            <button id="prevImage" class="style-prev-next">
+              <span class="mdi mdi-chevron-left font-prev-next"></span>
+            </button>
+            <button id="nextImage" class="style-prev-next">
+              <span class="mdi mdi-chevron-right font-prev-next"></span>
+            </button>
+          </div>
+          <!-- BOTONES REACCIONES -->
+          <div class="card-buttons-container">
+            <div>
+              <button id="heartBtn" class="button-card">
+                <span
+                  id="heartBtnSpan"
+                  class="mdi mdi-heart-outline button-span"
+                ></span>
+              </button>
+              <button class="button-card">
+                <span class="mdi mdi-comment-outline button-span"></span>
+              </button>
+            </div>
+
+            <button id="bookBtn" class="button-card">
+              <span class="mdi mdi-bookmark-outline button-span"></span>
+            </button>
+          </div>
+          <!-- COSAS PARA COMENTAR -->
+          <div class="comment-input-button-container">
+            <div class="input-button">
+              <input
+                placeholder="Escribe tu mensaje..."
+                id="inputCard"
+                type="text"
+              />
+              <button id="sendButton">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="js/style.js"></script>
+  </body>
+</html>
